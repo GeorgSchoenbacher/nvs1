@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="fragen.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Fragen-Quiz Schönbacher</title>
+    </head>
+    <body onload="antworten(0)">
+        <div class="container">
+            <h1>Fragen-Quiz</h1>
+            <p>Frage: <label id="fragen_nummer">1</label></p>
+            <p>Punkte: <label id="punkte">0</label>/14</p>
+            <input type="text" id="frage" class="frage_s" readonly>
+            <div class="antwort">
+                <input type="radio" name="antwort" value="0"><label id="antwort1"></label><br>
+                <input type="radio" name="antwort" value="1"><label id="antwort2"></label><br>
+                <input type="radio" name="antwort" value="2"><label id="antwort3"></label><br>
+                <input type="radio" name="antwort" value="3"><label id="antwort4"></label>
+            </div>
+            <input type="button" id="checkBtn" value="weiter" onclick="check()">
+        </div>
+    </body>
+</html>
